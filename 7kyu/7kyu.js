@@ -56,5 +56,31 @@ descendingOrder(42145)
 // There will always be at least one number in the input string.
 // Output string must be two numbers separated by a single space, and highest number is first.
 
+// function highAndLow(numbers){
+//   let split = numbers.split(' ').map(function (x) { 
+//     return parseInt(x); 
+//   });
+//   console.log(split)
+//   let sort = split.sort((a,b)=>{
+//     return b-a;
+//   })
+//   let arry = [];
+//   let popout = sort.pop();
+//   let shiftout = sort.shift();
 
+//   arry.push(shiftout, popout);
+
+//   return console.log(arry.join(" "))
+// }
+
+
+function highAndLow(numbers){
+  let split = numbers.split(' ').map(Number);
+  console.log(split)
+
+ return console.log(`${Math.max(...split)} ${Math.min(...split)}`)
+}
+
+
+highAndLow("1 9 3 4 -5")
 
