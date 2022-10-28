@@ -3,6 +3,16 @@
 
 **A repository dedicated to the solutions for [Codewars.com](https://www.codewars.com/) with *sectioning* distribution according to difficulty level**
 
-* 8kyu
-* 7kyu
-* 6kyu
+Score Card:
+
+
+| Completed  | Score Rewarded |
+| ---------- | -------------- |
+| 8 kyu      |      2         |
+| 7 kyu      |      3         |
+| 6 kyu      |      8         |
+| 5 kyu      |      21        |
+| 4 kyu      |      55        |
+| 3 kyu      |      149       |
+| 2 kyu      |      404       |
+| 1 kyu      |      1097      |
