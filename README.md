@@ -16,3 +16,6 @@ Score Card:
 | 3 kyu      |      149       |
 | 2 kyu      |      404       |
 | 1 kyu      |      1097      |
+
+
+* Note: Only 8kyu, 7kyu and 6kyu solutions are in the repository so far. Stay tuned for upgradation ;)
