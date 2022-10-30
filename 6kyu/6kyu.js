@@ -43,3 +43,7 @@ function areaOfPolygonInsideCircle(circleRadius, numberOfSides) {
 
 //Good luck!
 
+
+function solve(s){
+ //..
+} 
