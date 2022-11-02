@@ -45,5 +45,13 @@ function areaOfPolygonInsideCircle(circleRadius, numberOfSides) {
 
 
 function solve(s){
- //..
-} 
+
+  return console.log([
+    s.split("").filter(item => /[A-Z]/.test(item)).length,
+    s.split("").filter(item => /[a-z]/.test(item)).length,
+    s.split("").filter(item => /\d/.test(item)).length,
+    s.split("").filter(item => /[^A-Za-z0-9]/.test(item)).length
+  ])
+}
+
+solve("*'&ABCDabcde12345")
