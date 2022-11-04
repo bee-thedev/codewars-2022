@@ -70,7 +70,7 @@ solve("*'&ABCDabcde12345")
 
 var uniqueInOrder=function(iterable){
   //your code here - remember iterable can be a string or an array
-  let split;
+  let split = iterable;
   console.log(split)
 
   let result = []
