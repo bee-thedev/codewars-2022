@@ -107,7 +107,10 @@ highAndLow("1 9 3 4 -5")
 // is_square([]) --> None
 
 var isSquare = function(arr){
-  //Your code here
+  arr.forEach(function(element, index, array){
+      array[index] = element* element;
+  });
+  console.log(arr)
 }
 
 isSquare([1, 4, 9, 16])
