@@ -12,7 +12,7 @@ function solution(str, ending){
     console.log(str.endsWith(ending))
   }
 
-  solution('abcde', 'cde')
+solution('abcde', 'cde')
 
 //==========================================   Descending order ====================================================
 
@@ -108,9 +108,17 @@ highAndLow("1 9 3 4 -5")
 
 var isSquare = function(arr){
   arr.forEach(function(element, index, array){
-      array[index] = element* element;
-  });
-  console.log(arr)
+     if(array[index] = ((Math.sqrt(element) %1 ==0))){
+      return console.log(true)
+     }
+})
+for(let i=0; i<arr.length; i++){
+  
+  if( arr[i] == true){
+    return console.log(true)
+  }else{
+  return console.log(false)
 }
-
-isSquare([1, 4, 9, 16])
+}
+}
+isSquare([1, 4, 7, 16])
