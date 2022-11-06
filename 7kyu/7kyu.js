@@ -107,18 +107,15 @@ highAndLow("1 9 3 4 -5")
 // is_square([]) --> None
 
 var isSquare = function(arr){
-  arr.forEach(function(element, index, array){
-     if(array[index] = ((Math.sqrt(element) %1 ==0))){
-      return console.log(true)
-     }
-})
-for(let i=0; i<arr.length; i++){
-  
-  if( arr[i] == true){
-    return console.log(true)
-  }else{
-  return console.log(false)
-}
-}
+  let result;
+  for(let i=0; i<arr.length; i){
+    let sqrt = Math.sqrt(arr[i]);
+    if(sqrt !== Math.round(sqrt)){
+      result = false
+    }else{
+      result = true
+    }
+  }
+  return console.log(arr.length === 0 ? undefined : result);
 }
 isSquare([1, 4, 7, 16])
