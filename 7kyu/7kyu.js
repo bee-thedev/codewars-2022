@@ -108,7 +108,7 @@ highAndLow("1 9 3 4 -5")
 
 var isSquare = function(arr){
   let result;
-  for(let i=0; i<arr.length; i){
+  for(let i=0; i<arr.length; i++){
     let sqrt = Math.sqrt(arr[i]);
     if(sqrt !== Math.round(sqrt)){
       result = false
