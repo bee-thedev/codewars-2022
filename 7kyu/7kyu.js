@@ -119,3 +119,30 @@ var isSquare = function(arr){
   return console.log(arr.length === 0 ? undefined : result);
 }
 isSquare([1, 4, 7, 16])
+
+
+//================================= Changing letters ================================
+
+// DESCRIPTION:
+// When provided with a String, capitalize all vowels
+
+// For example:
+
+// Input : "Hello World!"
+
+// Output : "HEllO WOrld!"
+
+// Note: Y is not a vowel in this kata.
+
+function swap (string) {
+  let splitString = string.split('')
+
+  for(let i=0; i<string.length; i++) {
+    if(splitString[i] === "a" || splitString[i] === "e" || splitString[i] === "o" || splitString[i] === "i" || splitString[i] === "u"){
+        splitString[i] = splitString[i].toUpperCase();
+    }
+  }
+  return console.log(splitString.join(""))
+}
+
+swap("Monday")
