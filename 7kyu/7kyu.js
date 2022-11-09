@@ -162,7 +162,15 @@ swap("Monday")
 // vowelOne( "aeiou, abc" ) // "1111100100"
 
 function vowelOne(s){
-  // ...
+    for(let i=0; i<s.length; i++){
+      if(s[i] === "a" || s[i] === "e" || s[i] === "i" || s[i] === "o" || s[i] === "u"){
+      s.replace(s[i], '1')
+      } else{
+  s.replace(s[i], '0')
+}
+return console.log(s)
+
+}
 }
 
-vowelOne()
+vowelOne("abceios")
