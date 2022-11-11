@@ -101,18 +101,21 @@ uniqueInOrder('AAAABBBCCDAABBB')
 // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 
 function likes(names) {
-  if( names === []){
+  if( names.length === 0){
     return console.log("no one likes it")
+  }else if (names.length === 1){
+    return console.log(`${names[0]} like this`)
+  }else if(names.length === 2){
+    return console.log(`${names[0]} and ${names[1]} like this`)
+  }else if(names.length === 3){
+    return console.log(`${names[0]}, ${names[1]} and ${names[2]}like this`)
+  }else if (names.length >= 4){
+     let splitTwo = names.splice(2).length;
+     console.log(splitTwo)
+    return console.log(`${names[0]}, ${names[1]} and ${splitTwo} others like this`)
   }
 
-  let item = " "
-
-  for (let i=0 ; i < 3; i++){
-    console.log(item = names[i]+"," + names[i+1] + "and" + names[i+2])
-  }
-
-  return console.log(item)
 }
 
 
-likes( ["Alex", "Jacob", "Mark", "Max"])
+likes( ["Alex", "Jacob", "Mark", "Max", "lewy"])
