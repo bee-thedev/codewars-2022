@@ -114,7 +114,6 @@ function likes(names) {
      console.log(splitTwo)
     return console.log(`${names[0]}, ${names[1]} and ${splitTwo} others like this`)
   }
-
 }
 
 

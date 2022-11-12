@@ -1,4 +1,4 @@
-/===================================== How good are you really? ===============================
+//===================================== How good are you really? ===============================
 
 //DESCRIPTION
 
@@ -20,3 +20,18 @@ function betterThanAverage(classPoints, yourPoints) {
   }
 
   betterThanAverage([23, 24, 17, 25, 15],14)
+
+  //===================================  Function 2 - squaring an argument ============================
+
+//   DESCRIPTION:
+// Now you have to write a function that takes an argument and returns the square of it.
+
+
+// Write the "square"-function here
+
+function  squareIt (arg){
+    return console.log(arg * arg)
+}
+
+squareIt(2)
+
