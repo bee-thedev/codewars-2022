@@ -11,24 +11,11 @@
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 
 var number=function(array){
-  
+ return  array.map((element,index) => {
+
+      return console.log(index + 1 + ": " + element)
+  });
 
 }
 
 number(["a", "b", "c"])
-
-function solution(names) {
-  // javascript object
-  const values = {};
-
-  for(let i = 0; i < names.length; i++){
-      if(values[names[i]]){             
-         values[names[i]] = 1;
-      }else{
-         values[names[i]] += 1;
-      }
-  }
-  console.log(values);
-}
-
-solution(["a", "b", "c"])
