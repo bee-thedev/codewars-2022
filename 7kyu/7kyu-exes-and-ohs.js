@@ -11,7 +11,18 @@
 // XO("zzoo") => false
 
 function XO(str) {
+
+    console.log((str.match(/o/g) || []).length)
+
+    let numberOhs = (str.match(/o/gi)||[]).length;
+    let numberExes = (str.match(/x/gi)||[]).length;
+    console.log(numberExes)
+    console.log(numberOhs)
     
+
+    if(numberOhs === numberExes ) return console.log(true)
+    else if(numberOhs !== numberExes) return console.log(false)
+
 }
 
-XO("zpzpzpp")
+XO("xxxm")
