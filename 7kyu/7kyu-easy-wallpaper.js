@@ -31,7 +31,18 @@
 
 
 function wallpaper(l, w, h) {
-    // your code
+    if(l*w*h === 0) return numbers[0]
+    else return (numbers[Math.ceil((l * h * 2 + w * h * 2) * 1.15 / 5.2)]);
 }
 
 wallpaper(4.0, 3.5, 3.0)
+
+// function wallpaper (length, width, height) {
+//     if (length === 0 || width === 0) return 'zero'
+  
+//     const roomArea = 2 * (length + width) * height
+//     const rollArea = 0.52 * 10
+  
+//     const rollsRequired = Math.ceil(roomArea / rollArea * 1.15)
+//     return numbers[rollsRequired]
+//   }
