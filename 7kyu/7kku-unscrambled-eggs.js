@@ -12,7 +12,8 @@
 function unscrambleEggs(word){
     //coding is feggunegg
 
-    
+    let eggCodded = word.split("egg").join("")
+    console.log(eggCodded)
   }
 
-  unscrambleEggs("Beggegeggineggneggeregg")
+  unscrambleEggs("ceggodegge heggeregge")
