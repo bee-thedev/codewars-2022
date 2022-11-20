@@ -17,9 +17,13 @@
 
 function isPythagoreanTriple(integers) {
     // Good luck friends!
+    integers = integers.sort((a,b) =>  a - b)
     let [a,b,c] = integers
     console.log(a)
-    if(c*2 === a*2 + b*2){
+    console.log(b)
+    console.log(c)
+    
+    if(c**2 === a**2 + b**2){
         return console.log(true)
     }else{
         return console.log(false)
