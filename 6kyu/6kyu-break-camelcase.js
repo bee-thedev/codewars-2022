@@ -6,8 +6,11 @@
 // ""             =>  ""
 
 function solution(string) {
-    let spiltCase = string.split("")
-    console.log(spiltCase)
+    let capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    console.log(capital[4])
+
+        console.log(string.includes([A-Z]/g) ? true : false)
+
 }
 
 
