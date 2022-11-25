@@ -8,8 +8,9 @@
 function solution(string) {
     let capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     console.log(capital[4])
+    let regex = 
 
-        console.log(string.includes([A-Z]/g) ? true : false)
+        console.log(string.includes(^([A-Z][a-z]+)+$) ? true : false)
 
 }
 
