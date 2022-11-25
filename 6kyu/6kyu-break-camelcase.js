@@ -8,10 +8,10 @@
 function solution(string) {
     let capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     console.log(capital[4])
-    let regex = 
-
-        console.log(string.includes(^([A-Z][a-z]+)+$) ? true : false)
-
+   
+    console.log(string)
+        let searchCapital = string.split('').match(/[A-Z]/g)
+        
 }
 
 
