@@ -6,13 +6,18 @@
 // ""             =>  ""
 
 function solution(string) {
-    let capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    console.log(capital[4])
-   
-    console.log(string)
-        let searchCapital = string.split('').match(/[A-Z]/g)
+    string = string.split('').map(function (el) {
+        if (el === el.toUpperCase()) {
+          el = ' ' + el
+        }
+        return el
+      })
+      return console.log(string.join(''))
+
+        //  return   console.log(string.match(/^[A-Z]?[^A-Z]*|[A-Z][^A-Z]*/g).join(' '));
         
 }
 
 
 solution("camelCasing")
+
