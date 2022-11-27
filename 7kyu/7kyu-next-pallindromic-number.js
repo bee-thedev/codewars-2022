@@ -18,14 +18,12 @@
 
 // Enjoy it!!
 
-function nextPal(val) {
-    let reverse = val.toString().split("").reverse().join("")
-    console.log(val)
-    if(val === reverse) {
-        return  console.log("Pallindrome")
-    }
-else{
-        return console.log(val)
-    }
-}
-    nextPal(2541)
+function nextPal(num) {
+        let reverse = num.toString().split("").reverse().join("")
+      console.log(reverse)
+
+     
+     }
+   
+
+    nextPal(11)
