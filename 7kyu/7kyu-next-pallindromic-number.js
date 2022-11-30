@@ -18,15 +18,25 @@
 
 // Enjoy it!!
 
-function nextPal(val) {
-  for(let i = val + 1; true; i++){
-    let nextNumber = i+'';
-    let reverse = val.toString().split("").reverse().join("")
-    if(reverse == nextNumber){
-      return i;
-    }
-    }  
-   }
+// function nextPal(val) {
+//   for(let i = val + 1; true; i++){
+//     let nextNumber = i+'';
+//     let reverse = val.toString().split("").reverse().join("")
+//     if(reverse == nextNumber){
+//       return i;
+//     }
+//     }  
+//    }
    
 
-    nextPal(343)
+//     nextPal(343)
+
+function nextPal(val){
+  for(let i = val + 1; true; i++){
+    if([...String(i)].reverse().join("") == i){
+      return console.log(i)
+    }
+  }
+}
+
+nextPal(343)
