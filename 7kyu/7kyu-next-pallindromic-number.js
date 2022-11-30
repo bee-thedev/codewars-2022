@@ -19,16 +19,14 @@
 // Enjoy it!!
 
 function nextPal(val) {
-    //     let reverse = val.toString().split("").reverse().join("")
-    //   console.log(reverse)
-      function range(start, end) {
-        return Array(end - start + 1). fill(). map((_, idx) => start + idx)
-      }
-        var result = range(11, val); // [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-        console. log(result);
-
-        return console.log(result)
-     }
+  for(let i = val + 1; true; i++){
+    let nextNumber = i+'';
+    let reverse = val.toString().split("").reverse().join("")
+    if(reverse == nextNumber){
+      return i;
+    }
+    }  
+   }
    
 
-    nextPal(34)
+    nextPal(343)
