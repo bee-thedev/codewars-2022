@@ -6,14 +6,16 @@
 
 
 var capitals = function (word) {
-     let split = word.split("")
-     console.log(split);
+   let array = [];
 
-     split.map(item=>{
-        return console.log(item.toUpperCase())
-     })
-
-     split.indexOf()
+    for(let i =0; i<word.length; i++) {
+    if(word[i] === word[i].toUpperCase()){
+       console.log(i)
+       array.push(i)
+    }
+}
+    return console.log(array)
 }
 
-capitals('BeeNySh');
+
+capitals('mEhwishSaYeD');
