@@ -8,3 +8,14 @@
 //Examples
 //[1, 1, 2] ==> 2
 //[17, 17, 3, 17, 17, 17, 17] ==> 3
+
+
+function stray(array) {
+ for(let i=0; i<array.length; i++) {
+	if(stray[i]! == stray[i+1]{
+		return console.log(stray[i])
+}
+}
+}
+
+stray([17, 17, 3, 17, 17, 17, 17]) 
