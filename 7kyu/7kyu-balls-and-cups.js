@@ -1,6 +1,9 @@
 
 // DESCRIPTION:
-// Ronny the robot is watching someone perform the Cups and Balls magic trick. The magician has one ball and three cups, he shows Ronny which cup he hides the ball under (b), he then mixes all the cups around by performing multiple two-cup switches (arr). Ronny can record the switches but can't work out where the ball is. Write a programme to help him do this.
+// Ronny the robot is watching someone perform the Cups and Balls magic trick. The magician has one ball and three cups, 
+//he shows Ronny which cup he hides the ball under (b), 
+//he then mixes all the cups around by performing multiple two-cup switches (arr). 
+//Ronny can record the switches but can't work out where the ball is. Write a programme to help him do this.
 
 // Rules:
 
@@ -25,3 +28,8 @@
 // The ball is under cup number : 3 
 
 
+function cupAndBalls(b, arr){
+
+
+
+};
