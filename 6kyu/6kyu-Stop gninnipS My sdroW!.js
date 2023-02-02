@@ -15,14 +15,15 @@ function spinWords(string){
     for(let i = 0; i < split.length; i++){
         let newString= " "
         if(split[i].length >= 5){
-            newString = newString + " " + split[i].split("").reverse().join("")
+            newString = split[i].split("").reverse().join("")
             console.log(newString)
         }
      else{
         console.log(newString = split[i])
      }
-     return console.log(newString)
+     return console.log(newString = newString + " " + split[i])
     }
   }
 
 spinWords("Hey fellow warriors");
+
