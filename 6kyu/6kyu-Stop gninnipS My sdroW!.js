@@ -10,19 +10,19 @@
 
 function spinWords(string){
     //TODO Have fun :)
-    let split = string.split(" ");
-    console.log(split);
-    for(let i = 0; i < split.length; i++){
-        let newString= " "
-        if(split[i].length >= 5){
-            newString = split[i].split("").reverse().join("")
-            console.log(newString)
+    let splitString = string.split(" ");
+    let result = '';
+    console.log(splitString);
+    for(let i = 0; i < splitString.length; i++){
+        if(splitString[i].length >= 5){
+            console.log(splitString[i]=splitString[i].split("").reverse().join(""))
         }
      else{
-        console.log(newString = split[i])
+        console.log(splitString[i]=splitString[i])
      }
-     return console.log(newString = newString + " " + split[i])
+      result = splitString.join(' ')
     }
+    return result;
   }
 
 spinWords("Hey fellow warriors");
