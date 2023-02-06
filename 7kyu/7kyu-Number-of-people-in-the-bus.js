@@ -18,16 +18,35 @@
 
 var number = function(busStops){
     // Good Luck!
-let arr1 = [];
-let arr2 = [];
+let entry;
+let exit;
+
+let arr1 = []
+let arr2 = []
 
     for(let i=0; i < busStops.length; i++){
-        for(let j=0; j< busStops[i].length; j++){
-            console.log(busStops[i][j]);
-            
-        }
-       
+        entry = busStops[i].shift();
+        exit = busStops[i].pop()
+// Pushing said split of values into arra1 and arr2
+        arr1.push(entry)
+        arr2.push(exit)
     }
+
+    // Sum of arr1 items
+     let sum1 = arr1.reduce(function(a, b){
+       return a + b;
+     });
+     console.log(sum1)
+    
+     // Sum of arr2 items
+
+     let sum2 = arr2.reduce(function(a, b){
+       return a + b;
+     });
+     console.log(sum2)
+
+     let total = sum1 - sum2;
+     console.log(total)
   }
 
  number ([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]);
