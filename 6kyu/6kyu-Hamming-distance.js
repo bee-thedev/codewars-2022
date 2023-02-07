@@ -14,7 +14,8 @@
 
 function hamming(a,b) {
 	// Implement me!
-    
+    let string1 = a.split()
+    console.log(string1)
 }
 
 hamming("I like turtles","I like turkeys")
