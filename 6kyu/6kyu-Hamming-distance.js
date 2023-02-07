@@ -14,8 +14,14 @@
 
 function hamming(a,b) {
 	// Implement me!
-    let string1 = a.split()
-    console.log(string1)
+    let count = 0;
+    for(let i = 0; i < a.length; i++){
+       if(a[i] === b[i]){
+          continue;
+       };
+       count++;
+    };
+    return console.log(count);
 }
 
 hamming("I like turtles","I like turkeys")
