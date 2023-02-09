@@ -15,10 +15,10 @@
 // 10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
 
 function gimme (triplet) {
-    let sortTriplet = triplet.sort(function(a, b){return a - b})
+    let sortTriplet = [...triplet].sort(function(a, b){return a - b})
     console.log(sortTriplet)
-
-    return console.log(sortTriplet.indexOf(2))
+    
+    return console.log(triplet.indexOf(sortTriplet[1]))
 }
 
-gimme([2,3,1])
+gimme([21,13,14])
