@@ -15,7 +15,16 @@
 // ENJOY CODING :)
 
 function sumOfMinimums(arr) {
-    // your code here
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].sort(function(a, b){return a-b});
+        console.log(arr[i])
+        for(let j=0; j < arr[i].length; j++){
+            console.log(arr[i][0])
+        }
+         console.log(sum = sum + arr[i][0])
   }
+  return console.log("Sum final= " + sum)
+}
 
-  sumOfMinimums([[11, 12, 14, 54], [67, 89, 90, 56], [7, 9, 4, 3], [9, 8, 6, 7]])
+  sumOfMinimums([[40, 63, 94, 39, 150], [135, 43, 22, 139, 126], [141, 25, 44, 46, 135]]);
